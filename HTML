@@ -1,1 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Alura</title>
+    <style>
+        :root {
+            --bg-color: #051933;
+            --card-bg: #142847;
+            --text-color: #ffffff;
+            --text-secondary: #b4c5db;
+            --accent-color: #1875e5;
+            --accent-hover: #1059b3;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .project-title {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: var(--text-color);
+        }
+
+        .project-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .project-tech {
+            font-size: 0.8rem;
+            color: var(--accent-color);
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: 600;
+            transition: background-color 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meus Projetos Alura</h1>
+        <p>Espaço para centralizar os códigos, desafios e projetos práticos que desenvolvi durante os cursos da Alura.</p>
+    </header>
+
+    <main class="container">
+        <!-- Projeto 1 -->
+        <section class="project-card">
+            <div>
+                <h2 class="project-title">Alura Plus</h2>
+                <p class="project-tech">HTML & CSS</p>
+                <p class="project-desc">Prática de posicionamento com Flexbox e propriedades básicas de estilização replicando a interface do Alura+.</p>
+            </div>
+            <a href="https://github.com" target="_blank" class="btn">Ver Código</a>
+        </section>
+
+        <!-- Projeto 2 -->
+        <section class="project-card">
+            <div>
+                <h2 class="project-title">Alura Midi</h2>
+                <p class="project-tech">JavaScript</p>
+                <p class="project-desc">Aplicação de funções, seletores e eventos em JavaScript para criar uma bateria eletrônica funcional na web.</p>
+            </div>
+            <a href="https://github.com" target="_blank" class="btn">Ver Código</a>
+        </section>
+
+        <!-- Projeto 3 -->
+        <section class="project-card">
+            <div>
+                <h2 class="project-title">Organo</h2>
+                <p class="project-tech">React / TypeScript</p>
+                <p class="project-desc">Criação de um organizador de times utilizando componentes React, gerenciamento de estado e hooks.</p>
+            </div>
+            <a href="https://github.com" target="_blank" class="btn">Ver Código</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com" target="_blank">Seu Nome</a></p>
+    </footer>
+
+</body>
+</html>
+Use o código com cuidado.
 
